@@ -1,0 +1,164 @@
+/* --- LAYOUT --- */
+.tasks-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tasks-header {
+  margin-bottom: 30px;
+}
+
+.tasks-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #495057;
+  margin: 0;
+}
+
+.tasks-header p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* --- ADD TASK FORM --- */
+.task-form-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.task-form {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.task-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.task-input:focus {
+  border-color: #3b7ddd;
+}
+
+.input-main { flex: 2; }
+.input-date { flex: 1; }
+
+.btn-add-task {
+  background: #3b7ddd;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.btn-add-task:hover {
+  background: #3369ba;
+}
+
+/* --- TASK ITEMS --- */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.check-icon {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.task-content .task-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.task-content .task-date {
+  font-size: 12px;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+}
+
+/* --- STATUS & ACTIONS --- */
+.task-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-book {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+}
+
+.btn-book:hover {
+  background: #e9ecef;
+}
+
+.booked-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: #4bbf73;
+  background: #e7f8ee;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.btn-delete {
+  color: #d9534f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: opacity 0.2s;
+}
+
+.btn-delete:hover {
+  opacity: 0.7;
+}

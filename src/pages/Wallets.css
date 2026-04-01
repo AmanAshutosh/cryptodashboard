@@ -1,0 +1,142 @@
+
+.wallet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wallet-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #495057;
+  margin: 0;
+}
+
+.wallet-subtitle {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+
+.main-balance-card {
+  background: #222e3c;
+  border-radius: 12px;
+  color: #fff;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.balance-content {
+  padding: 30px;
+  position: relative;
+}
+
+.wallet-bg-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0.1;
+}
+
+.balance-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #adb5bd;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.balance-amount-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.balance-main {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.currency-tag {
+  color: #4bbf73;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+
+.quick-actions-bar {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px 30px;
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-action {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.btn-blue { background: #3b7ddd; color: #fff; }
+.btn-gray { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.btn-outline { background: transparent; color: #adb5bd; border: 1px solid rgba(255,255,255,0.2); }
+
+.btn-action:hover { opacity: 0.9; transform: translateY(-1px); }
+
+
+.asset-section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0.875rem 0 rgba(33, 37, 41, .05);
+  overflow: hidden;
+}
+
+.asset-header {
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.asset-table th {
+  background: #f8f9fa;
+  padding: 12px 20px;
+  font-size: 11px;
+  color: #adb5bd;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.asset-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f8f9fa;
+  font-size: 14px;
+}
+
+.coin-icon {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: #e7f3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b7ddd;
+  font-weight: bold;
+  font-size: 10px;
+}

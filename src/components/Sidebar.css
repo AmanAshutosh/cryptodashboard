@@ -1,0 +1,95 @@
+.sidebar {
+  width: 260px;
+  background: #222e3c;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-brand {
+  padding: 25px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.brand-icon {
+  background: #3b7ddd;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name span {
+  color: #3b7ddd;
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-category {
+  padding: 20px 24px 10px;
+  font-size: 0.7rem;
+  color: #6c757d;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Sidebar Item Styles */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #adb5bd;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+  color: #e9ecef;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-link.active {
+  color: #ffffff;
+  background: rgba(59, 125, 221, 0.1);
+  border-left: 4px solid #3b7ddd;
+}
+
+.sidebar-link-text {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-email {
+  font-size: 0.8rem;
+  color: #adb5bd;
+}
+
+.logout-btn {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.logout-btn:hover {
+  color: #fff;
+}

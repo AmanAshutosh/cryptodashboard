@@ -1,0 +1,208 @@
+
+.invoice-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.invoice-title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #495057;
+  margin: 0;
+}
+
+.invoice-subtitle {
+  color: #6c757d;
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+
+.btn-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  color: #495057;
+}
+
+.btn-outline:hover {
+  background: #f8f9fa;
+}
+
+.btn-filled {
+  background: #3b7ddd;
+  border: none;
+  color: #fff;
+}
+
+.btn-filled:hover {
+  background: #3369ba;
+}
+
+.btn-dark {
+  background: #222e3c;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+
+.billing-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #adb5bd;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.user-name {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.summary-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #3b7ddd;
+}
+
+.profit-text {
+  font-size: 13px;
+  color: #4bbf73;
+  margin: 5px 0 0;
+  font-weight: 700;
+}
+
+
+.transaction-table-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.invoice-table thead tr {
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-table th {
+  padding: 15px 20px;
+  font-size: 13px;
+  color: #495057;
+}
+
+.invoice-table td {
+  padding: 15px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.trade-id {
+  font-weight: 600;
+  color: #3b7ddd;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.badge-buy { background: #e7f3ff; color: #3b7ddd; }
+.badge-sell { background: #fff4e5; color: #fd7e14; }
+
+
+.statement-summary {
+  margin-top: 40px;
+  padding: 30px;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.summary-details-box {
+  display: inline-block;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  min-width: 300px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.net-balance {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #3b7ddd;
+}
+
+
+@media print {
+  .header-actions, .btn-dark {
+    display: none !important;
+  }
+  .statement-summary {
+    border: 1px solid #eee;
+  }
+}
